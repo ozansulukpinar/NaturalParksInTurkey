@@ -923,15 +923,15 @@ let data = [
 
 //Find a random natural park
 function FindANaturalPark() {
-    let nPark = data[Math.floor(Math.random() * data.length)];
+    let park = data[Math.floor(Math.random() * data.length)];
 
     let areaMessage = '';
 
-    if (nPark.size != '') {
-        areaMessage = ' It occupies an area of ' + nPark.size + ' hectares.';
+    if (park.size != '') {
+        areaMessage = ' It occupies an area of ' + park.size + ' hectares.';
     }
 
-    let message = nPark.name + ' is a natural park in ' + nPark.city + ', Turkey.' + areaMessage;
+    let message = park.name + ' is a natural park in ' + park.city + ', Turkey.' + areaMessage;
 
     return message;
 }
